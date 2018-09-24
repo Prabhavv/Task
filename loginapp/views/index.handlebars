@@ -1,0 +1,21 @@
+<h3 class="page-header">Send Messages</h3>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" name="name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" name="title" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label>Send message</label>
+    <textarea class="form-control rounded-0" name="message" placeholder="Write Message" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
